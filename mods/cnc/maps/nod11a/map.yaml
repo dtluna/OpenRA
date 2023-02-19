@@ -827,11 +827,9 @@ Actors:
 		Owner: GDI
 		Facing: 640
 		SubCell: 2
-	Actor243: rmbo
+	RamboLocation: waypoint
 		Location: 7,5
-		Owner: Nod
-		Facing: 512
-		SubCell: 0
+		Owner: Neutral
 	DefaultChinookTarget: waypoint
 		Location: 34,45
 		Owner: Neutral

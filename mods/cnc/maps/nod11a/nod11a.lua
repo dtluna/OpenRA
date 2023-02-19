@@ -29,6 +29,8 @@ WorldLoaded = function()
 	GDIObjective = GDI.AddPrimaryObjective("Eliminate all Nod forces in the area.")
 	WarFactoryObjective = Nod.AddPrimaryObjective("Destroy or capture the Weapons Factory.")
 
+	Actor.Create(Rambo, true, { Owner = Nod, Location = RamboLocation.Location })
+
 end
 
 Tick = function()
