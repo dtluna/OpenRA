@@ -2,7 +2,7 @@ MapFormat: 12
 
 RequiresMod: cnc
 
-Title: scb11ea
+Title: 11a: Ezekiel's Wheel
 
 Author: Westwood Studios
 
@@ -12,9 +12,9 @@ MapSize: 64,64
 
 Bounds: 3,3,58,58
 
-Visibility: Lobby
+Visibility: MissionSelector
 
-Categories: Conquest
+Categories: Campaign
 
 Players:
 	PlayerReference@Neutral:
@@ -22,23 +22,30 @@ Players:
 		OwnsWorld: True
 		NonCombatant: True
 		Faction: gdi
-		Enemies: GoodGuy, BadGuy
 	PlayerReference@Creeps:
 		Name: Creeps
 		NonCombatant: True
 		Faction: Random
-	PlayerReference@GoodGuy:
-		Name: GoodGuy
+	PlayerReference@GDI:
+		Name: GDI
 		Faction: gdi
 		Color: F6D679
-		Allies: GoodGuy
-		Enemies: BadGuy
-	PlayerReference@BadGuy:
-		Name: BadGuy
+		Allies: GDI
+		Enemies: Nod
+		Bot: campaign
+	PlayerReference@Nod:
+		Name: Nod
+		LockFaction: True
+		AllowBots: False
+		Playable: True
+		Required: True
 		Faction: nod
-		Color: FF1400
-		Allies: BadGuy
-		Enemies: GoodGuy
+		LockColor: True
+		Color: FE1100
+		LockSpawn: True
+		LockTeam: True
+		Allies: Nod
+		Enemies: GDI
 
 Actors:
 	Actor0: wcrate
@@ -505,61 +512,61 @@ Actors:
 		Owner: Neutral
 	Actor154: nuke
 		Location: 56,4
-		Owner: GoodGuy
+		Owner: GDI
 	Actor155: nuke
 		Location: 54,4
-		Owner: GoodGuy
+		Owner: GDI
 	Actor156: atwr
 		Location: 47,12
-		Owner: GoodGuy
+		Owner: GDI
 	Actor157: atwr
 		Location: 56,12
-		Owner: GoodGuy
+		Owner: GDI
 	Actor158: gtwr
 		Location: 54,14
-		Owner: GoodGuy
+		Owner: GDI
 	Actor159: gtwr
 		Location: 49,14
-		Owner: GoodGuy
+		Owner: GDI
 	Actor160: silo
 		Location: 46,4
-		Owner: GoodGuy
+		Owner: GDI
 	Actor161: silo
 		Location: 52,4
-		Owner: GoodGuy
+		Owner: GDI
 	Actor162: silo
 		Location: 48,4
-		Owner: GoodGuy
+		Owner: GDI
 	Actor163: silo
 		Location: 50,4
-		Owner: GoodGuy
+		Owner: GDI
 	Actor164: pyle
 		Location: 51,6
-		Owner: GoodGuy
+		Owner: GDI
 	Actor165: fact
 		Location: 41,7
-		Owner: GoodGuy
+		Owner: GDI
 	Actor166: proc
 		Location: 45,6
-		Owner: GoodGuy
+		Owner: GDI
 	Actor167: hq
 		Location: 48,6
-		Owner: GoodGuy
+		Owner: GDI
 	Actor168: weap
 		Location: 56,8
-		Owner: GoodGuy
+		Owner: GDI
 	Actor169: nuke
 		Location: 58,4
-		Owner: GoodGuy
+		Owner: GDI
 	Actor170: nuke
 		Location: 53,6
-		Owner: GoodGuy
+		Owner: GDI
 	Actor171: nuke
 		Location: 42,4
-		Owner: GoodGuy
+		Owner: GDI
 	Actor172: miss
 		Location: 10,28
-		Owner: GoodGuy
+		Owner: GDI
 	Actor173: v25
 		Location: 15,53
 		Owner: Neutral
@@ -613,216 +620,216 @@ Actors:
 		Owner: Neutral
 	Actor190: gtwr
 		Location: 8,41
-		Owner: GoodGuy
+		Owner: GDI
 	Actor191: gtwr
 		Location: 12,41
-		Owner: GoodGuy
+		Owner: GDI
 	Actor192: fact
 		Location: 4,30
-		Owner: BadGuy
+		Owner: Nod
 	Actor193: hq
 		Location: 13,28
-		Owner: GoodGuy
+		Owner: GDI
 	Actor194: proc
 		Location: 14,30
-		Owner: GoodGuy
+		Owner: GDI
 	Actor195: nuke
 		Location: 16,28
-		Owner: GoodGuy
+		Owner: GDI
 	Actor196: hpad
 		Location: 44,4
-		Owner: GoodGuy
+		Owner: GDI
 	Actor197: boat
 		Location: 26,45
-		Owner: GoodGuy
+		Owner: GDI
 		Facing: 256
 	Actor198: mtnk
 		Location: 4,18
-		Owner: GoodGuy
+		Owner: GDI
 		Facing: 896
 	Actor199: jeep
 		Location: 42,12
-		Owner: GoodGuy
+		Owner: GDI
 	Actor200: jeep
 		Location: 43,12
-		Owner: GoodGuy
+		Owner: GDI
 	Actor201: mtnk
 		Location: 44,12
-		Owner: GoodGuy
+		Owner: GDI
 	Actor202: mtnk
 		Location: 45,12
-		Owner: GoodGuy
+		Owner: GDI
 	Actor203: htnk
 		Location: 46,12
-		Owner: GoodGuy
+		Owner: GDI
 	Actor204: htnk
 		Location: 51,10
-		Owner: GoodGuy
+		Owner: GDI
 		Facing: 512
 	Actor205: mtnk
 		Location: 51,51
-		Owner: GoodGuy
+		Owner: GDI
 		Facing: 896
 	Actor206: htnk
 		Location: 29,55
-		Owner: GoodGuy
+		Owner: GDI
 		Facing: 640
 	Actor207: arty
 		Location: 57,58
-		Owner: BadGuy
+		Owner: Nod
 	Actor208: arty
 		Location: 56,58
-		Owner: BadGuy
+		Owner: Nod
 	Actor209: arty
 		Location: 57,59
-		Owner: BadGuy
+		Owner: Nod
 	Actor210: arty
 		Location: 56,59
-		Owner: BadGuy
+		Owner: Nod
 	Actor211: harv
 		Location: 11,34
-		Owner: GoodGuy
+		Owner: GDI
 		Facing: 384
 	Actor212: jeep
 		Location: 11,11
-		Owner: GoodGuy
+		Owner: GDI
 		Facing: 640
 	Actor213: harv
 		Location: 52,12
-		Owner: GoodGuy
+		Owner: GDI
 		Facing: 512
 	Actor214: e3
 		Location: 58,56
-		Owner: BadGuy
+		Owner: Nod
 		SubCell: 3
 	Actor215: e3
 		Location: 58,56
-		Owner: BadGuy
+		Owner: Nod
 		SubCell: 1
 	Actor216: e1
 		Location: 55,56
-		Owner: BadGuy
+		Owner: Nod
 		SubCell: 4
 	Actor217: e1
 		Location: 55,56
-		Owner: BadGuy
+		Owner: Nod
 		SubCell: 2
 	Actor218: e6
 		Location: 7,4
-		Owner: BadGuy
+		Owner: Nod
 		Facing: 512
 		SubCell: 0
 	Actor219: e6
 		Location: 7,4
-		Owner: BadGuy
+		Owner: Nod
 		Facing: 512
 		SubCell: 2
 	Actor220: e6
 		Location: 7,4
-		Owner: BadGuy
+		Owner: Nod
 		Facing: 512
 		SubCell: 1
 	Actor221: e2
 		Location: 42,52
-		Owner: GoodGuy
+		Owner: GDI
 		SubCell: 2
 	Actor222: e2
 		Location: 43,52
-		Owner: GoodGuy
+		Owner: GDI
 		SubCell: 1
 	Actor223: e2
 		Location: 43,51
-		Owner: GoodGuy
+		Owner: GDI
 		SubCell: 3
 	Actor224: e2
 		Location: 42,51
-		Owner: GoodGuy
+		Owner: GDI
 		SubCell: 4
 	Actor225: e1
 		Location: 56,56
-		Owner: BadGuy
+		Owner: Nod
 		SubCell: 1
 	Actor226: e1
 		Location: 56,56
-		Owner: BadGuy
+		Owner: Nod
 		SubCell: 3
 	Actor227: e1
 		Location: 55,56
-		Owner: BadGuy
+		Owner: Nod
 		SubCell: 1
 	Actor228: e1
 		Location: 55,56
-		Owner: BadGuy
+		Owner: Nod
 		SubCell: 3
 	Actor229: e3
 		Location: 57,56
-		Owner: BadGuy
+		Owner: Nod
 		SubCell: 4
 	Actor230: e3
 		Location: 57,56
-		Owner: BadGuy
+		Owner: Nod
 		SubCell: 2
 	Actor231: e3
 		Location: 58,56
-		Owner: BadGuy
+		Owner: Nod
 		SubCell: 2
 	Actor232: e3
 		Location: 58,56
-		Owner: BadGuy
+		Owner: Nod
 		SubCell: 4
 	Actor233: e1
 		Location: 5,5
-		Owner: BadGuy
+		Owner: Nod
 		Facing: 512
 		SubCell: 1
 	Actor234: e1
 		Location: 5,4
-		Owner: BadGuy
+		Owner: Nod
 		Facing: 512
 		SubCell: 4
 	Actor235: e1
 		Location: 5,5
-		Owner: BadGuy
+		Owner: Nod
 		Facing: 512
 		SubCell: 2
 	Actor236: e1
 		Location: 5,4
-		Owner: BadGuy
+		Owner: Nod
 		Facing: 512
 		SubCell: 3
 	Actor237: e3
 		Location: 9,5
-		Owner: BadGuy
+		Owner: Nod
 		Facing: 512
 		SubCell: 2
 	Actor238: e3
 		Location: 9,5
-		Owner: BadGuy
+		Owner: Nod
 		Facing: 512
 		SubCell: 1
 	Actor239: e3
 		Location: 9,4
-		Owner: BadGuy
+		Owner: Nod
 		Facing: 512
 		SubCell: 3
 	Actor240: e3
 		Location: 9,4
-		Owner: BadGuy
+		Owner: Nod
 		Facing: 512
 		SubCell: 4
 	Actor241: e2
 		Location: 10,10
-		Owner: GoodGuy
+		Owner: GDI
 		Facing: 640
 		SubCell: 3
 	Actor242: e2
 		Location: 10,10
-		Owner: GoodGuy
+		Owner: GDI
 		Facing: 640
 		SubCell: 2
 	Actor243: rmbo
 		Location: 7,5
-		Owner: BadGuy
+		Owner: Nod
 		Facing: 512
 		SubCell: 0
 	DefaultChinookTarget: waypoint
@@ -883,10 +890,4 @@ Actors:
 		Location: 6,26
 		Owner: Neutral
 
-Rules:
-	World:
-		MissionData:
-			StartVideo: stealth.vqa
-			LossVideo: deskill.vqa
-			WinVideo: obel.vqa
-			BriefingVideo: nod11.vqa
+Rules: cnc|rules/campaign-maprules.yaml, cnc|rules/campaign-tooltips.yaml, cnc|rules/campaign-palettes.yaml, rules.yaml

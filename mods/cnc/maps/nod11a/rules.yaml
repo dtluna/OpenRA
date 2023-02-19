@@ -1,0 +1,55 @@
+World:
+	LuaScript:
+		Scripts: campaign.lua, utils.lua, nod11a.lua
+	MissionData:
+		Briefing: GDI has captured one of our technology centers. You must recapture the base and recover the stolen information. Our forces in the area don't have time to find a way across the river, so you will have to control the two forces separately.
+		StartVideo: stealth.vqa
+		LossVideo: deskill.vqa
+		WinVideo: obel.vqa
+		BriefingVideo: nod11.vqa
+	ScriptLobbyDropdown@difficulty:
+		ID: difficulty
+		Label: Difficulty
+		Description: The difficulty of the mission
+		Values:
+			easy: Easy
+			normal: Normal
+			hard: Hard
+		Default: normal
+	-LegacyBridgeLayer:
+
+Player:
+	PlayerResources:
+		DefaultCash: 0
+
+TRAN.IN:
+	Inherits: TRAN
+	RejectsOrders:
+	-Selectable:
+	RenderSprites:
+		Image: TRAN
+	Buildable:
+		Prerequisites: ~disabled
+	Interactable:
+	-RevealsShroud:
+
+RMBO.easy:
+	Inherits: RMBO
+	Health:
+		HP: 30000
+	ChangesHealth:
+		Step: 500
+		Delay: 10
+		StartIfBelow: 50
+		DamageCooldown: 200
+	RenderSprites:
+		Image: RMBO
+
+RMBO.hard:
+	Inherits: RMBO
+	-AutoTarget:
+	-AutoTargetPriority@DEFAULT:
+	-AutoTargetPriority@ATTACKANYTHING:
+	-AttackMove:
+	RenderSprites:
+		Image: RMBO
