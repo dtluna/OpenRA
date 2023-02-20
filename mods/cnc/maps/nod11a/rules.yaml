@@ -23,6 +23,9 @@ Player:
 		DefaultCash: 0
     EnemyWatcher:
 
+^BaseBuilding:
+	AnnounceOnSeen:
+
 TRAN.IN:
 	Inherits: TRAN
 	RejectsOrders:
