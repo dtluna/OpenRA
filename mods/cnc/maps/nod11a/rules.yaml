@@ -26,6 +26,10 @@ Player:
 ^BaseBuilding:
 	AnnounceOnSeen:
 
+HQ:
+	AirstrikePower:
+		Prerequisites: gdi
+
 RMBO.easy:
 	Inherits: RMBO
 	Health:
