@@ -55,3 +55,83 @@ MISS:
 	CaptureManager:
 	Capturable:
 		Types: building
+
+HPAD:
+	Buildable:
+		Prerequisites: ~disabled
+
+BRIK:
+	Buildable:
+		Prerequisites: ~disabled
+
+EYE:
+	Buildable:
+		Prerequisites: ~disabled
+
+TMPL:
+	Buildable:
+		Prerequisites: ~disabled
+
+E2:
+	Buildable:
+		Prerequisites: ~pyle
+
+E5:
+	Buildable:
+		Prerequisites: ~disabled
+
+HTNK:
+	Buildable:
+		Prerequisites: ~disabled
+
+HQ:
+	AirstrikePower:
+		Prerequisites: gdi
+		SquadSize: 1
+
+RMBO:
+	Buildable:
+		Prerequisites: ~disabled
+
+MCV:
+	Buildable:
+		Prerequisites: ~disabled
+
+FTNK:
+	Buildable:
+		Prerequisites: ~disabled
+
+MLRS:
+	Buildable:
+		Prerequisites: ~disabled
+
+MSAM:
+	Buildable:
+		Prerequisites: ~disabled
+
+ATWR:
+	Buildable:
+		Prerequisites: ~disabled
+
+HELI:
+	Buildable:
+		Prerequisites: ~disabled
+
+SBAG:
+	Buildable:
+		Queue: Defence.GDI, Defence.Nod
+
+OBLI:
+	Buildable:
+		Prerequisites: anyhq
+
+A10.IN:
+	Inherits: A10
+	RenderSprites:
+		Image: A10
+	Armament@BOMBS:
+		Weapon: Napalm.in
+
+airstrike.proxy:
+	AirstrikePower:
+		UnitType: a10.in
