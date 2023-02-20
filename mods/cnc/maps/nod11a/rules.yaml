@@ -20,7 +20,7 @@ World:
 
 Player:
 	PlayerResources:
-		DefaultCash: 0
+		DefaultCash: 2000
 	EnemyWatcher:
 
 ^BaseBuilding:
