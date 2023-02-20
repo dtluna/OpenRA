@@ -26,17 +26,6 @@ Player:
 ^BaseBuilding:
 	AnnounceOnSeen:
 
-TRAN.IN:
-	Inherits: TRAN
-	RejectsOrders:
-	-Selectable:
-	RenderSprites:
-		Image: TRAN
-	Buildable:
-		Prerequisites: ~disabled
-	Interactable:
-	-RevealsShroud:
-
 RMBO.easy:
 	Inherits: RMBO
 	Health:
