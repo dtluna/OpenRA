@@ -489,10 +489,10 @@ Actors:
 	Actor145: t18
 		Location: 13,57
 		Owner: Neutral
-	Actor146: t13.transformable
+	Actor146: split3
 		Location: 4,24
 		Owner: Neutral
-	Actor147: t13.transformable
+	Actor147: split3
 		Location: 53,39
 		Owner: Neutral
 	Actor148: t18
