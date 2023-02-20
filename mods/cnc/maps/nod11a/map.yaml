@@ -46,6 +46,11 @@ Players:
 		LockTeam: True
 		Allies: Nod
 		Enemies: GDI
+	PlayerReference@NodBase:
+		Name: NodBase
+		Faction: nod
+		Color: FE1100
+		Bot: campaign
 
 Actors:
 	Actor0: wcrate
@@ -564,7 +569,7 @@ Actors:
 	Actor171: nuke
 		Location: 42,4
 		Owner: GDI
-	Actor172: miss
+	TechCenter: miss
 		Location: 10,28
 		Owner: GDI
 	Actor173: v25
@@ -624,9 +629,9 @@ Actors:
 	Actor191: gtwr
 		Location: 12,41
 		Owner: GDI
-	Actor192: fact
+	NodConYard: fact
 		Location: 4,30
-		Owner: Nod
+		Owner: NodBase
 	Actor193: hq
 		Location: 13,28
 		Owner: GDI
