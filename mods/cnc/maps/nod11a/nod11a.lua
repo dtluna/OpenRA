@@ -71,7 +71,7 @@ WorldLoaded = function()
 	Trigger.OnDiscovered(NodConYard, ConYardDiscovered)
 	Trigger.OnCapture(TechCenter, TechCenterCaptured)
 	Trigger.OnKilled(Church, function()
-		Actor.Create("moneycrate", true, { Owner = GDI, Location = CPos.New(15, 54) })
+		Actor.Create("moneycrate", true, { Owner = GDI, Location = CPos.New(15, 55) })
 	end)
 end
 
