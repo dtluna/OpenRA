@@ -48,6 +48,7 @@ Players:
 		Enemies: GDI
 	PlayerReference@NodBase:
 		Name: NodBase
+		NonCombatant: True
 		Faction: nod
 		Color: FE1100
 		Bot: campaign
@@ -891,3 +892,5 @@ Actors:
 		Owner: Neutral
 
 Rules: cnc|rules/campaign-maprules.yaml, cnc|rules/campaign-tooltips.yaml, cnc|rules/campaign-palettes.yaml, rules.yaml
+
+Weapons: weapons.yaml
