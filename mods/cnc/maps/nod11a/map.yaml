@@ -53,9 +53,6 @@ Players:
 		Bot: campaign
 
 Actors:
-	Actor0: wcrate
-		Location: 15,54
-		Owner: Neutral
 	Actor1: brik
 		Location: 13,40
 		Owner: Neutral
@@ -572,7 +569,7 @@ Actors:
 	TechCenter: miss
 		Location: 10,28
 		Owner: GDI
-	Actor173: v25
+	Church: v25
 		Location: 15,53
 		Owner: Neutral
 	Actor174: v26
