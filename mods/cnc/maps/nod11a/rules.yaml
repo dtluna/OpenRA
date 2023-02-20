@@ -55,6 +55,12 @@ MISS:
 	CaptureManager:
 	Capturable:
 		Types: building
+	ProvidesPrerequisite:
+		Prerequisite: ezekiel
+
+STNK:
+	Buildable:
+		Prerequisites: ~ezekiel
 
 HPAD:
 	Buildable:

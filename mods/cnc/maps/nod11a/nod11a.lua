@@ -37,7 +37,7 @@ TechCenterCaptured = function(_, _, _, newOwner)
 	if not Nod.IsObjectiveCompleted(CaptureTechCenter) and newOwner == Nod then
 		Nod.MarkCompletedObjective(CaptureTechCenter)
 
-		Trigger.AfterDelay(DateTime.Seconds(1), function()
+		Trigger.AfterDelay(DateTime.Seconds(3), function()
 			Media.PlaySpeechNotification(Nod, "NewOptions")
 		end)
 	end
